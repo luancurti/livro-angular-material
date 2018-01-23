@@ -3,7 +3,7 @@
   <mat-checkbox indeterminate="true">Meu Texto</mat-checkbox>
 </fieldset>
 
-<mat-checkbox color="primary" #myCheck indeterminate="true" (indeterminateChange)="estadoIndeterminado($event)" (change)="estadoMudado($event)">
+<mat-checkbox color="primary" #myCheck indeterminate="true" (indeterminateChange)="estadoIndeterminado($event.checked)" (change)="estadoMudado($event)">
   Meu Texto
 </mat-checkbox>
 <button (click)="myCheck.indeterminate = true">
